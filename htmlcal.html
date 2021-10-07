@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html css calculator</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" >
+</head>
+
+<body>
+    <div class="centercal">
+        <form name="cal" action="">
+            <input type="button" name="" value="calculator" id="calname">
+            <input type="text" name="answers" id="displayanswers">
+           <div class="layer0">
+
+            <input type="reset" name="" value="c" id="clearscreen">
+        <input type="button" name="" id="clearscreen" value="=" onclick="cal.answers.value= eval(cal.answers.value)">
+           </div>
+
+
+            <div class="layer1">
+                <input type="button" name="" class="mainnum" value="7" onclick="cal.answers.value += '7' ">
+                <input type="button" name="" class="mainnum" value="8" onclick="cal.answers.value += '8' ">
+                <input type="button" name="" class="mainnum" value="9" onclick="cal.answers.value += '9' ">
+                <input type="button" name="" class="oper" value="*" onclick="cal.answers.value += '*' ">
+
+                <div class="layer1">
+                    <input type="button" name="" class="mainnum" value="4" onclick="cal.answers.value += '4' ">
+                    <input type="button" name="" class="mainnum" value="5" onclick="cal.answers.value += '5' ">
+                    <input type="button" name="" class="mainnum" value="6" onclick="cal.answers.value += '6' ">
+                    <input type="button" name="" class="oper" value="-" onclick="cal.answers.value += '-' ">
+
+                    <div class="layer1">
+                        <input type="button" name="" class="mainnum" value="1" onclick="cal.answers.value += '1' ">
+                        <input type="button" name="" class="mainnum" value="2" onclick="cal.answers.value += '2' ">
+                        <input type="button" name="" class="mainnum" value="3" onclick="cal.answers.value += '3' ">
+                        <input type="button" name="" class="oper" value="+" onclick="cal.answers.value += '+' ">
+
+                        <div class="layer1">
+                            <input type="button" name="" class="oper" value="." onclick="cal.answers.value += '.' ">
+                            <input type="button" name="" class="mainnum" value="0" onclick="cal.answers.value += '0' ">
+                            <input type="button" name="" class="oper" value="%" onclick="cal.answers.value += '%' ">
+                            <input type="button" name="" class="oper" value="/" onclick="cal.answers.value += '/' ">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
