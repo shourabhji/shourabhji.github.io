@@ -1,58 +1,101 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+     /* border: none;  */
+    text-decoration: none;
+    transition: all .2s linear;
 }
 
+/* 
 #meter{
     position: relative;
 margin: auto;
-height: 40vh;
-width: 60%;
-background-color: cyan;  
+height: 25vh;
+width: 40%;
+ background-image:linear-gradient(to right, rgba(243, 0, 190, 0.514),rgba(26, 124, 235, 0.678)) ;   
 align-items: center;   
-}
+justify-content: center;
+} */
 #number{                    
 margin: auto;
-height: 19% ;
+height: 28% ;
 width: 32%;
 left: 21%;
 top: 27%;
-font-size: 2em;
+font-size: 3rem;
 position: relative;
 border-radius: 0%;
 text-align: center;
+z-index: 100;
+border: none;
+background: none;
+color: cornsilk;
 
 }
 #min{      
     position: relative;                   
     margin: auto;
-    height: 19%; ;
+    height: 28%; ;
     width: 11%;
     left: 9%;
-top: 24%;
-font-size: 2em;
+    transition: all .2s linear;
+    border-radius: 200%;
+top: 37%;
+z-index: 100;
+font-size: 4rem;
+color: blue;
+background-color: rgba(0, 0, 255, 0);
 }
 #max{      
-    position: relative;                   
+    position: relative;  
+   
     margin: auto;
-    height:19%; 
+    height:28%; 
     width: 11%;
-    left: 32%;
-top: 24%;
-font-size: 2em;
+    left: 32%; 
+    transition: all .2s linear;
+ top: 27%;
+font-size: 4rem;
+z-index: 100;
+color: rgb(255, 0, 212);
+background-color:rgba(14, 116, 211, 0) ;
+border-radius: 200%;
+
 }
 #reset   {  
     position: relative;                    
-left: 26%;
+left: 29%;
 top: 28%;
 height: 19%;
-width: 45%;
-font-size: 2em;
+width: 40%;
+font-size: 4rem;
+background-image:linear-gradient(to right, rgba(26, 124, 235, 0.438),rgba(243, 0, 190, 0.562)) ;  
+transition: all .2s linear;
+z-index: 100;
+ border-radius: 8px;
+background-color: transparent;
+
 }
-body{
-   background-color: blanchedalmond;
-}
+
 #footer{
     margin: auto;
     text-align: center;
+  color: black;
+  z-index: 10000;
+  background-color: orange;
+  overflow:visible;
 }
+#background{
+    position: relative;
+    margin: auto;
+    overflow:visible;
+    width: 100%;
+    
+    align-items: center;   
+    justify-content: center;
+    position: absolute;
+    ;
+  }
